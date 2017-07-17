@@ -1,0 +1,14 @@
+version: 1
+
+name: s3-static-website
+
+environments:
+  dev:
+    site:
+      type: s3staticsite
+      path_to_code: ./_site/
+      versioning: enabled
+      index_document: index.html
+      error_document: error.html
+      tags:
+        mytag: myvalue
